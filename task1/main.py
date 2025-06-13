@@ -15,7 +15,7 @@ def total_salary(file_path):
     except ValueError: # обробка помилки, якщо дані у файлі не можуть бути перетворені на float 
         print("Помилка у форматі даних у файлі.")
         return 0, 0 
-    except IndexError:
+    except IndexError: # обробка помилки, якщо рядок не містить достатньо елементів
         print("Помилка у форматі рядків у файлі.")
         return 0, 0
     
